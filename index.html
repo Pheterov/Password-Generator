@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Password Generator App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="logo">
+        Generate a <br />
+        <span> random password</span>
+      </header>
+      <p class="info">Never use an insecure password again.</p>
+      <div class="user-input-container">
+        <p class="length-text">Length</p>
+        <input class="password-length" type="number" />
+      </div> 
+        <button class="password-generator" onclick="generatePasswords()">
+          Generate passwords
+        </button>
+      <div class="password-container">
+        <input class="password-top"></input>
+        <input class="password-bottom"></input>
+      </div>
+    </div>
+    <!--  -->
+    <script src="script.js"></script>
+  </body>
+</html>

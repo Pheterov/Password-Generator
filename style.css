@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f2937;
+  min-height: 100vh;
+  min-width: 100vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+span {
+  color: #10b981;
+}
+
+.info {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #10b981;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  height: 2.5rem;
+  padding: 9px 17px;
+  margin-bottom: 70px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button::before {
+  position: absolute;
+  left: 0;
+  top: 85px;
+  content: "";
+  width: 277%;
+  height: 1px;
+  background-color: #fff1;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.password-top,
+.password-bottom {
+  background-color: #273549;
+  margin-bottom: 10px;
+  height: 2.5rem;
+  width: 30.5rem;
+  text-align: center;
+  font-size: 24px;
+  color: #10b981;
+  border: none;
+  border-radius: 5px;
+  padding: 0 2px;
+}
+
+.password-length {
+  background-color: #273549;
+  border: 1px solid #fff1;
+  border-radius: 5px;
+  font-size: 30px;
+  text-align: center;
+  height: 3rem;
+  width: 5rem;
+  color: #10b981;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.password-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.length-text {
+  font-size: 20px;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.user-input-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 97%;
+}
